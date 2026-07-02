@@ -5,7 +5,7 @@
       "label": "configure",
       "type": "shell",
       "command": "cmake",
-      "args": ["-S", ".", "-B", "build", "-G", "Ninja"],
+      "args": ["--preset", "default"],
       "group": "build",
       "problemMatcher": []
     },
@@ -13,7 +13,7 @@
       "label": "build smoke_test",
       "type": "shell",
       "command": "cmake",
-      "args": ["--build", "build", "--target", "smoke_test"],
+      "args": ["--build", "--preset", "smoke_test"],
       "dependsOn": "configure",
       "group": "build",
       "problemMatcher": []
@@ -22,7 +22,7 @@
       "label": "build test_smoke",
       "type": "shell",
       "command": "cmake",
-      "args": ["--build", "build", "--target", "test_smoke"],
+      "args": ["--build", "--preset", "test_smoke"],
       "dependsOn": "configure",
       "group": "build",
       "problemMatcher": []
@@ -31,7 +31,7 @@
       "label": "test",
       "type": "shell",
       "command": "ctest",
-      "args": ["--test-dir", "build", "--output-on-failure"],
+      "args": ["--preset", "default"],
       "dependsOn": "build test_smoke",
       "group": "test",
       "problemMatcher": []

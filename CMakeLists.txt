@@ -6,11 +6,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 include(CTest)
-enable_testing()
 
 find_package(Qt6 REQUIRED COMPONENTS Core)
-find_package(OpenCV REQUIRED)
-find_package(GTest REQUIRED)
+find_package(OpenCV REQUIRED COMPONENTS core)
 
 add_executable(smoke_test
     src/main.cpp
@@ -27,21 +25,25 @@ target_include_directories(smoke_test
     ${OpenCV_INCLUDE_DIRS}
 )
 
-add_executable(test_smoke
-    tests/basic_test.cpp
-)
+if(BUILD_TESTING)
+    find_package(GTest REQUIRED)
 
-target_link_libraries(test_smoke
-    PRIVATE
-    Qt6::Core
-    ${OpenCV_LIBS}
-    GTest::gtest_main
-)
+    add_executable(test_smoke
+        tests/basic_test.cpp
+    )
 
-target_include_directories(test_smoke
-    PRIVATE
-    ${OpenCV_INCLUDE_DIRS}
-)
+    target_link_libraries(test_smoke
+        PRIVATE
+        Qt6::Core
+        ${OpenCV_LIBS}
+        GTest::gtest_main
+    )
 
-include(GoogleTest)
-gtest_discover_tests(test_smoke)
+    target_include_directories(test_smoke
+        PRIVATE
+        ${OpenCV_INCLUDE_DIRS}
+    )
+
+    include(GoogleTest)
+    gtest_discover_tests(test_smoke)
+endif()

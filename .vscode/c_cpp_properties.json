@@ -6,13 +6,15 @@
       "compilerPath": "/usr/bin/g++",
       "intelliSenseMode": "linux-gcc-x64",
       "cppStandard": "c++17",
-      "compileCommands": "${workspaceFolder}/compile_commands.json",
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json",
       "configurationProvider": "ms-vscode.cmake-tools",
       "includePath": [
         "${workspaceFolder}/**",
+        "/usr/include",
         "/usr/include/opencv4",
         "/usr/include/x86_64-linux-gnu/qt6",
-        "/usr/include/x86_64-linux-gnu/qt6/QtCore"
+        "/usr/include/x86_64-linux-gnu/qt6/QtCore",
+        "/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++"
       ]
     }
   ]

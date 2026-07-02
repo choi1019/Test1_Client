@@ -1,3 +1,4 @@
-SmokeTest.OpenCVMatrixIdentity 2 0.00537468
-SmokeTest.QtStringConstruction 2 0.00231064
+SmokeTest.OpenCVMatrixIdentity 7 0.00415715
+SmokeTest.QtStringConstruction 7 0.000970413
+test_smoke_NOT_BUILT 0 0
 ---

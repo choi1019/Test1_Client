@@ -8,11 +8,16 @@
       "program": "${workspaceFolder}/build/smoke_test",
       "args": [],
       "cwd": "${workspaceFolder}/build",
+      "noDebug": true,
       "stopAtEntry": false,
       "externalConsole": false,
       "MIMode": "gdb",
       "miDebuggerPath": "/usr/bin/gdb",
-      "preLaunchTask": "build smoke_test"
+      "preLaunchTask": "build smoke_test",
+      "presentation": {
+        "group": "smoke_test",
+        "order": 1
+      }
     },
     {
       "name": "Debug smoke_test",
@@ -25,7 +30,11 @@
       "externalConsole": false,
       "MIMode": "gdb",
       "miDebuggerPath": "/usr/bin/gdb",
-      "preLaunchTask": "build smoke_test"
+      "preLaunchTask": "build smoke_test",
+      "presentation": {
+        "group": "smoke_test",
+        "order": 2
+      }
     }
   ]
 }

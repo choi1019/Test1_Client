@@ -1,10 +1,10 @@
-Start testing: Jul 02 20:43 KST
+Start testing: Jul 02 20:58 KST
 ----------------------------------------------------------
 1/2 Testing: SmokeTest.OpenCVMatrixIdentity
 1/2 Test: SmokeTest.OpenCVMatrixIdentity
 Command: "/home/kosta/lecture1/Test1_Client/build/test_smoke" "--gtest_filter=SmokeTest.OpenCVMatrixIdentity" "--gtest_also_run_disabled_tests"
 Directory: /home/kosta/lecture1/Test1_Client/build
-"SmokeTest.OpenCVMatrixIdentity" start time: Jul 02 20:43 KST
+"SmokeTest.OpenCVMatrixIdentity" start time: Jul 02 20:58 KST
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -20,10 +20,10 @@ Note: Google Test filter = SmokeTest.OpenCVMatrixIdentity
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.03 sec
 ----------------------------------------------------------
 Test Passed.
-"SmokeTest.OpenCVMatrixIdentity" end time: Jul 02 20:43 KST
+"SmokeTest.OpenCVMatrixIdentity" end time: Jul 02 20:58 KST
 "SmokeTest.OpenCVMatrixIdentity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -31,7 +31,7 @@ Test Passed.
 2/2 Test: SmokeTest.QtStringConstruction
 Command: "/home/kosta/lecture1/Test1_Client/build/test_smoke" "--gtest_filter=SmokeTest.QtStringConstruction" "--gtest_also_run_disabled_tests"
 Directory: /home/kosta/lecture1/Test1_Client/build
-"SmokeTest.QtStringConstruction" start time: Jul 02 20:43 KST
+"SmokeTest.QtStringConstruction" start time: Jul 02 20:58 KST
 Output:
 ----------------------------------------------------------
 Running main() from ./googletest/src/gtest_main.cc
@@ -47,11 +47,11 @@ Note: Google Test filter = SmokeTest.QtStringConstruction
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.00 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"SmokeTest.QtStringConstruction" end time: Jul 02 20:43 KST
+"SmokeTest.QtStringConstruction" end time: Jul 02 20:58 KST
 "SmokeTest.QtStringConstruction" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jul 02 20:43 KST
+End testing: Jul 02 20:58 KST
