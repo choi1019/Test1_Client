@@ -1,0 +1,5 @@
+add_test([=[SmokeTest.OpenCVMatrixIdentity]=]  /home/kosta/lecture1/Test1_Client/build/test_smoke [==[--gtest_filter=SmokeTest.OpenCVMatrixIdentity]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[SmokeTest.OpenCVMatrixIdentity]=]  PROPERTIES WORKING_DIRECTORY /home/kosta/lecture1/Test1_Client/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[SmokeTest.QtStringConstruction]=]  /home/kosta/lecture1/Test1_Client/build/test_smoke [==[--gtest_filter=SmokeTest.QtStringConstruction]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[SmokeTest.QtStringConstruction]=]  PROPERTIES WORKING_DIRECTORY /home/kosta/lecture1/Test1_Client/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  test_smoke_TESTS SmokeTest.OpenCVMatrixIdentity SmokeTest.QtStringConstruction)

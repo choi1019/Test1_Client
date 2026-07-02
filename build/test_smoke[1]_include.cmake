@@ -1,0 +1,5 @@
+if(EXISTS "/home/kosta/lecture1/Test1_Client/build/test_smoke[1]_tests.cmake")
+  include("/home/kosta/lecture1/Test1_Client/build/test_smoke[1]_tests.cmake")
+else()
+  add_test(test_smoke_NOT_BUILT test_smoke_NOT_BUILT)
+endif()

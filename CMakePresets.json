@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 16,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "default",
+      "displayName": "Default (Ninja, g++)",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_CXX_COMPILER": "/usr/bin/g++",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "default",
+      "displayName": "Build All",
+      "configurePreset": "default"
+    },
+    {
+      "name": "smoke_test",
+      "displayName": "Build smoke_test",
+      "configurePreset": "default",
+      "targets": ["smoke_test"]
+    },
+    {
+      "name": "test_smoke",
+      "displayName": "Build test_smoke",
+      "configurePreset": "default",
+      "targets": ["test_smoke"]
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "default",
+      "displayName": "CTest",
+      "configurePreset": "default",
+      "output": {
+        "outputOnFailure": true
+      }
+    }
+  ]
+}

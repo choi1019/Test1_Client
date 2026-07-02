@@ -1,0 +1,31 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run smoke_test",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/smoke_test",
+      "args": [],
+      "cwd": "${workspaceFolder}/build",
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "build smoke_test"
+    },
+    {
+      "name": "Debug smoke_test",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/smoke_test",
+      "args": [],
+      "cwd": "${workspaceFolder}/build",
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "build smoke_test"
+    }
+  ]
+}

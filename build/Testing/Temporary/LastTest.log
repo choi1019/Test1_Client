@@ -1,0 +1,57 @@
+Start testing: Jul 02 20:43 KST
+----------------------------------------------------------
+1/2 Testing: SmokeTest.OpenCVMatrixIdentity
+1/2 Test: SmokeTest.OpenCVMatrixIdentity
+Command: "/home/kosta/lecture1/Test1_Client/build/test_smoke" "--gtest_filter=SmokeTest.OpenCVMatrixIdentity" "--gtest_also_run_disabled_tests"
+Directory: /home/kosta/lecture1/Test1_Client/build
+"SmokeTest.OpenCVMatrixIdentity" start time: Jul 02 20:43 KST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = SmokeTest.OpenCVMatrixIdentity
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SmokeTest
+[ RUN      ] SmokeTest.OpenCVMatrixIdentity
+[       OK ] SmokeTest.OpenCVMatrixIdentity (0 ms)
+[----------] 1 test from SmokeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"SmokeTest.OpenCVMatrixIdentity" end time: Jul 02 20:43 KST
+"SmokeTest.OpenCVMatrixIdentity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: SmokeTest.QtStringConstruction
+2/2 Test: SmokeTest.QtStringConstruction
+Command: "/home/kosta/lecture1/Test1_Client/build/test_smoke" "--gtest_filter=SmokeTest.QtStringConstruction" "--gtest_also_run_disabled_tests"
+Directory: /home/kosta/lecture1/Test1_Client/build
+"SmokeTest.QtStringConstruction" start time: Jul 02 20:43 KST
+Output:
+----------------------------------------------------------
+Running main() from ./googletest/src/gtest_main.cc
+Note: Google Test filter = SmokeTest.QtStringConstruction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from SmokeTest
+[ RUN      ] SmokeTest.QtStringConstruction
+[       OK ] SmokeTest.QtStringConstruction (0 ms)
+[----------] 1 test from SmokeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SmokeTest.QtStringConstruction" end time: Jul 02 20:43 KST
+"SmokeTest.QtStringConstruction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 02 20:43 KST

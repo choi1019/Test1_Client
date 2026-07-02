@@ -1,0 +1,18 @@
+{
+  "cmake.useCMakePresets": "always",
+  "cmake.configurePreset": "default",
+  "cmake.buildPreset": "smoke_test",
+  "cmake.testPreset": "default",
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.generator": "Ninja",
+  "cmake.configureOnOpen": true,
+  "cmake.configureArgs": [
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
+  ],
+  "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
+  "cmake.ctestArgs": [
+    "--output-on-failure"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "configure",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["-S", ".", "-B", "build", "-G", "Ninja"],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "build smoke_test",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "build", "--target", "smoke_test"],
+      "dependsOn": "configure",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "build test_smoke",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "build", "--target", "test_smoke"],
+      "dependsOn": "configure",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "test",
+      "type": "shell",
+      "command": "ctest",
+      "args": ["--test-dir", "build", "--output-on-failure"],
+      "dependsOn": "build test_smoke",
+      "group": "test",
+      "problemMatcher": []
+    }
+  ]
+}
